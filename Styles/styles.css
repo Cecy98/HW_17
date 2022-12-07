@@ -7,8 +7,9 @@
 }
 
 .logo {
-    width: 23%;
+    width: 50%;
     padding: 1%;
+    text-align: center;
 }
 
 .nav {
@@ -16,12 +17,12 @@
     padding: 1%;
 }
 
-.nav ul {
+.ul li {
+    display: inline;
     width: 50%;
     margin-left: auto;
+    padding: 50px;
 }
-
-/* was not able to do STEP 5: 2,3,& 4 */
 
 .me {
     height: 600px;
@@ -33,11 +34,27 @@
     margin: 0 auto;
 }
 
-footer {
-    background-color: #373738;
-    /* need to figure out padding*/
-    ;
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+div .content{
+    width: 500px;
+    margin: 0 auto;
 }
 
 
-/* could not figure out the rest*/
+footer {
+    background-color: #373738;
+    color: white;
+    padding: 25px, 50px;
+}
+
+.footer-ul li{
+    display:inline-block;
+    vertical-align: top;
+    padding: 50px;
+
+}
