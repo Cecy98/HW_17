@@ -8,20 +8,29 @@ body {
     padding: 15px;
   }
 
+  .inline-block{
+    display: inline-block;
+  }
+
   .logo {
-    width: 4%;
+    display:inline-block;
+    width: 20%;
     padding: 1%;
     text-align: center;
 }
 
   .ul {
     float: right;
-    color: black;
+    color: white;
   }
 
   .li_inline-block {
     display: inline-block;
     padding: 0px 5px;
+}
+
+nav{
+  display: inline-block;
 }
   
   header p {
