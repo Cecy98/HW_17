@@ -1,33 +1,6 @@
 /* Styles */
 
-body {
-    margin: 0;
-  }
-  .header {
-    background-color: #032602;
-    padding: 15px;
-  }
 
-  .inline-block{
-    display: inline-block;
-  }
-
-  .logo {
-    display:inline-block;
-    width: 20%;
-    padding: 1%;
-    text-align: center;
-}
-
-  .ul {
-    float: right;
-    color: white;
-  }
-
-  .li_inline-block {
-    display: inline-block;
-    padding: 0px 5px;
-}
 body {
   margin: 0;
 }
@@ -94,7 +67,7 @@ button {
 .flexContainer {
   display:flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 33%;
   margin: 0 auto;
   padding: auto;
@@ -119,12 +92,45 @@ text-align: center;
 
 /* MY WORK CSS */
 
-.myWork {
+/*   *This is another way to do the grid section instead of the one below*
+.workGrid {
   display: grid;
   grid-template-rows: 33% 33% 34%;
   grid-template-columns: 50% 50% ;
   justify-content: center;
   align-content: center;
+}
+*/
+.workGrid{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "projectTitle projectImage" 
+                       "projectTitle projectImage" 
+                       "projectTitle projectImage";
+}
+.projectTitle{
+  grid-area: projectTitle ;
+}
+
+.projectImage{
+  grid-area: projectImage;
+}
+
+.workGrid{
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+.opProject{
+  width: 15%;
+}
+.deProject{
+  width: 15%;
+}
+.todoProject{
+  width: 15%;
 }
 
 
@@ -144,10 +150,18 @@ text-align: center;
   }
   
 
-
-
-
-
+/* finish this part up */
+@media only screen and (max-width:600){
+  .flexContainer{
+    display: grid;
+    width: 100%;
+    grid-template-rows:300px 300px 300px ;
+    grid-template-columns: 1fr;
+    grid-template-areas: "URicon" "UIicon"
+    "Webicon";
+  }
+  
+}
 
 
 
